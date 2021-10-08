@@ -60,7 +60,7 @@ if (isset($_GET['id'])) {
         </div>
      <button type="Submit" name="Submit"  class="btn btn-success">Save changes</button>
 <a href="viewrecords.php" class="btn btn-primary">Cancel</a>
-<a href="index.php" class="btn btn-warning">Home</a>
+
 
     </form>
 
