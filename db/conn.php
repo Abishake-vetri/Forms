@@ -1,4 +1,5 @@
 <?php
+//heroko deployment database
    $host= "remotemysql.com";
    $db = "XL2JY1pK4l";
    $user = "XL2JY1pK4l";
@@ -23,4 +24,8 @@
    }
     require_once 'crud.php';
    $crud = new crud($pdo);
+   require_once 'users.php';
+   $users = new users($pdo);
+  $users->insertUser('admin','password');
+
 ?>
