@@ -11,11 +11,11 @@
     public function insertUser($username,$password){
         try {
             $fcal = $this->getUserByUsername($username);
-            if($fcal['num']>0){
+            if($fcal['num'] > 0){
                 return false;
             }
             else{
-            $new_password = md5($password,$username);
+            $new_password = md5($password.$username);
             $sql = "INSERT INTO  users(username,password) VALUES(:username,:password) ";
             $stmt = $this->db->prepare($sql);
             $stmt->bindparam(':username', $username);
@@ -24,7 +24,7 @@
             return true; 
             }
         } catch (PDOException $e) {
-            echo $e->getMessage();
+           echo $e->getMessage();
             return false;
         }
     }

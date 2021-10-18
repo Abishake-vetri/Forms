@@ -1,5 +1,5 @@
 <?php
-include 'Includes/session.php'
+ require_once 'Includes/session.php'
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,12 +22,20 @@ include 'Includes/session.php'
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         </button>
         <div class="navbar-nav mr-auto " id="navbarNav">
-              <a class="nav-link active" aria-current="page" href="index.php">Home</a>
-              <a class="nav-link active" href="viewrecords.php" >viewrecords</a>
+              <a class="nav-link active" aria-current="page" href="userEntry.php">Home </a>
+              <a class="nav-link active" href="viewrecords.php" >viewrecords </a>
         </div>
 
         <div class="navbar-nav ml-auto " id="navbarNav">
-              <a class="nav-link active" aria-current="page" href="login.php">login</a>
+          <?php 
+          if(!isset( $_SESSION['username'])) {  
+              echo "<a class='nav-link active' aria-current='page' href='index.php'>login</a>";
+           }  
+          
+         else{ 
+              echo "<a class='nav-link active' aria-current='page' href='index.php'>logOut</a>";
+          }
+          ?>
         </div>
       </div>
     </nav></br>

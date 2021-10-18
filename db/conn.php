@@ -1,17 +1,17 @@
 <?php
 //heroko deployment database
-   $host= "remotemysql.com";
-   $db = "XL2JY1pK4l";
-   $user = "XL2JY1pK4l";
-   $pass = "bGpM4DuDoH";
-   $charset = "utf8mb4";
+  // $host= "remotemysql.com";
+   //$db = "XL2JY1pK4l";
+   //$user = "XL2JY1pK4l";
+   //$pass = "bGpM4DuDoH";
+   //$charset = "utf8mb4";
 
 //databace for localserver
-  /* $host= "localhost";
+   $host= "localhost";
    $db = "attandance_db";
    $user = "root";
    $pass = "";
-   $charset = "utf8mb4";*/
+   $charset = "utf8mb4";
   
    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
     
@@ -26,6 +26,6 @@
    $crud = new crud($pdo);
    require_once 'users.php';
    $users = new users($pdo);
-  $users->insertUser('admin','password');
+   $users->insertUser('admin@13','password');
 
 ?>
