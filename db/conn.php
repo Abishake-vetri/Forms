@@ -1,10 +1,10 @@
 <?php
 //heroko deployment database
-  // $host= "remotemysql.com";
-   //$db = "XL2JY1pK4l";
-   //$user = "XL2JY1pK4l";
-   //$pass = "bGpM4DuDoH";
-   //$charset = "utf8mb4";
+  $host= "remotemysql.com";
+  $db = "xstqGkSlUr";
+  $user = "xstqGkSlUr";
+   $pass = "uAjB8QSpzz";
+  $charset = "utf8mb4";
 
 //databace for localserver
    $host= "localhost";
