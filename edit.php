@@ -1,6 +1,8 @@
 <?php
 $title = 'Edit';
 require 'Includes/header.php';
+require 'Includes/authenticate.php';
+
 require_once 'db/conn.php';
 ?>
 <?php

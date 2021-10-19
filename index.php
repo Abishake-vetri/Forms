@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] =='POST'){
         echo "<div class ='alert alert-danger'>Username or Password is incorrect.</div>";
     }else{
         $_SESSION['username']=$username;
-        $_SESSION['userid']=$result['userid'];
+        $_SESSION['id']=$result['id'];
         header("Location:viewrecords.php");
     }
 }

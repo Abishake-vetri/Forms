@@ -26,16 +26,15 @@
               <a class="nav-link active" href="viewrecords.php" >viewrecords </a>
         </div>
 
-        <div class="navbar-nav ml-auto " id="navbarNav">
+        <div class="navbar-nav ml-auto" >
           <?php 
-          if(!isset( $_SESSION['username'])) {  
-              echo "<a class='nav-link active' aria-current='page' href='index.php'>login</a>";
-           }  
-          
-         else{ 
-              echo "<a class='nav-link active' aria-current='page' href='index.php'>logOut</a>";
-          }
-          ?>
+          if(!isset( $_SESSION['id'])) 
+          {  ?>
+              <a class='nav-link active' aria-current='page' href='index.php'>Login</a>
+         <?php   }  else {  ?>
+           
+           <a class='nav-link active' aria-current='page' href='logout.php'>Logout</a>
+      <?php } ?>
         </div>
       </div>
     </nav></br>

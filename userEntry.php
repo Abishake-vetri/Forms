@@ -1,6 +1,6 @@
 <?php
-$title = 'Index';
-require 'Includes/header.php';
+$title = 'Home';
+require_once 'Includes/header.php';
 require_once 'db/conn.php';
 ?>
 

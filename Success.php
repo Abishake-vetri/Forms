@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
     $issuccess = $crud->insert($name, $Dob, $number, $email, $password, $department);
 }
 if ($issuccess) {
-    echo '<h1 class="text-center text-success" class="fw-bolder">' . "Your responses has been recorded" . "</h1>";
+    echo '<h1 class="text-center text-success" class="fw-bolder">' . "Your details are Saved!" . "</h1>";
 } else {
     echo '<h1 class="text-center text-danger" class="fw-bolder">' . "Your responses has been failed" . "</h1>";
 }

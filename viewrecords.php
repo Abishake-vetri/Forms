@@ -1,6 +1,7 @@
 <?php
 $title = 'View_Records';
 require 'Includes/header.php';
+require_once 'Includes/authenticate.php';
 require_once 'db/conn.php';
 ?>
 

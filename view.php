@@ -1,6 +1,8 @@
 <?php
 $title = 'ViewDetails';
 require 'Includes/header.php';
+require_once 'Includes/authenticate.php';
+
 require_once 'db/conn.php';
 ?> 
 
