@@ -7,11 +7,11 @@
  $charset = "utf8mb4";
 
 //databace for localserver
-$host = "localhost";
-$db = "attandance_db";
-$user = "root";
-$pass = "";
-$charset = "utf8mb4";
+//$host = "localhost";
+//$db = "attandance_db";
+//$user = "root";
+//$pass = "";
+//$charset = "utf8mb4";
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
